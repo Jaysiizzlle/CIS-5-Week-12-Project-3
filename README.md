@@ -6,7 +6,7 @@
 Paste a link to a short video of you running this assignment (tool + code + run).
 Work without a working video link is incomplete.
 
-**Your demo:** _add your link here_
+**Your demo:** https://youtu.be/kza-H2MNr1M
 
 **Week 12 · Project 3**  
 **Theme:** Project 2’s report, on fifty random scores  
@@ -103,3 +103,12 @@ No classes, `new` / `delete`, file I/O, or a menu. Strings and structs are week 
 |-----------|----:|
 | Code submitted that does the work | 50 |
 | Video explanation | 50 |
+
+
+Explanation:
+
+for void countGrades: This function is used to count the grades all int N of students (50). We use a & as a reference to the varaibles in the arrary (int& a, int& b... etc.) That way we don't make a copy of those same variables making it work back into our int main()
+
+for double average: This function gives the average of all students' grades. I declared a int sum first, then use the "for loop" to go thru all 50 students scores. Using the instructions I did (sum * 1.0 / n) which is an equation to find the average for all students' grades. That's why we used a "double" since there's decimals.
+
+for officeHours: This helps identifies any students with scores LESS THAN 60% to go to office hours. I use a pointer (int*) to update the original lines variable in main(). I pass the address of that variable using &lines, and use *failingCount inside the function to change its value. I also check for nullptr before writing through the pointer. If the pointer is nullptr, the function still prints the office-hours messages but skips updating the count.
